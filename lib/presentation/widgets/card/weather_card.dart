@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'package:jas_cuaca/util/global_style.dart';
 
+@immutable
 class WeatherCard extends StatefulWidget {
   final String celcius;
   final String time;
   final String categoty;
   final String? localImage;
 
-  WeatherCard(
-      {Key? key,
+  const WeatherCard(
+      {super.key,
       required this.celcius,
       required this.time,
       required this.categoty,
-      this.localImage})
-      : super(key: key);
+      this.localImage});
 
   @override
   State<WeatherCard> createState() => _WeatherCardState();
@@ -25,7 +25,7 @@ class _WeatherCardState extends State<WeatherCard> {
     color: kWhite,
     fontFamily: h1.fontFamily,
     fontSize: h1.fontSize,
-    fontWeight: draw.fontWeight,
+    fontWeight: h1.fontWeight,
   );
 
   @override

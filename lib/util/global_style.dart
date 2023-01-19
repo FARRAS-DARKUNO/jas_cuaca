@@ -13,6 +13,8 @@ final TextStyle h2 =
     GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.bold);
 final TextStyle h3 =
     GoogleFonts.openSans(fontSize: 14, fontWeight: FontWeight.w600);
+final TextStyle h4 =
+    GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.normal);
 final TextStyle unit =
     GoogleFonts.openSans(fontSize: 32, fontWeight: FontWeight.normal);
 final TextStyle draw =
@@ -26,6 +28,7 @@ final kTextTheme = TextTheme(
     headline1: h1,
     headline2: h2,
     headline3: h3,
+    headline4: h4,
     bodyLarge: draw,
     caption: page,
     button: button,

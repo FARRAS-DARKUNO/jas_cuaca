@@ -1,0 +1,6 @@
+ WeatherCard(
+            categoty: 'Berawan Cerah',
+            celcius: '20 C',
+            time: '00:00',
+          ),
+

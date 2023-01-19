@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jas_cuaca/presentation/widgets/card/long_card.dart';
 import 'package:jas_cuaca/presentation/widgets/card/weather_card.dart';
 import 'package:jas_cuaca/util/global_style.dart';
 
@@ -94,8 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // horizontal).
         // mainAxisAlignment: MainAxisAlignment.start,r
         children: <Widget>[
-          WeatherCard(
-              categoty: 'Berawan Cerah', celcius: '20 C', time: '00:00'),
+          LongCard(day: 'Today', max: '27 C', min: '31 C'),
         ],
       ),
 
