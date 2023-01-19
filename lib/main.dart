@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jas_cuaca/presentation/widgets/card/humidity_card.dart';
 import 'package:jas_cuaca/presentation/widgets/card/long_card.dart';
 import 'package:jas_cuaca/presentation/widgets/card/weather_card.dart';
 import 'package:jas_cuaca/util/global_style.dart';
@@ -94,9 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // axis because Columns are vertical (the cross axis would be
         // horizontal).
         // mainAxisAlignment: MainAxisAlignment.start,r
-        children: <Widget>[
-          LongCard(day: 'Today', max: '27 C', min: '31 C'),
-        ],
+        children: <Widget>[HumadityCard(type: 'Max', value: 27)],
       ),
 
       // This trailing comma makes auto-formatting nicer for build methods.

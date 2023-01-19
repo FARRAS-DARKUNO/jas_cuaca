@@ -14,7 +14,7 @@ final TextStyle h2 =
 final TextStyle h3 =
     GoogleFonts.openSans(fontSize: 14, fontWeight: FontWeight.w600);
 final TextStyle h4 =
-    GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.normal);
+    GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.w500);
 final TextStyle unit =
     GoogleFonts.openSans(fontSize: 32, fontWeight: FontWeight.normal);
 final TextStyle draw =
