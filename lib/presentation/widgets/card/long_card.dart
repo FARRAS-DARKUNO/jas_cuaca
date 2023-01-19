@@ -51,12 +51,13 @@ class _LongCardState extends State<LongCard> {
       height: 420,
       width: MediaQuery.of(context).size.width * 0.7,
       decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment(1, 1),
-            colors: <Color>[kPrimary, kSecondary],
-          ),
-          borderRadius: BorderRadius.circular(30)),
+        gradient: const LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment(1, 1),
+          colors: <Color>[kPrimary, kSecondary],
+        ),
+        borderRadius: BorderRadius.circular(30),
+      ),
       child: Column(
         children: <Widget>[
           Expanded(

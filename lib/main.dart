@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jas_cuaca/presentation/widgets/card/humidity_card.dart';
 import 'package:jas_cuaca/presentation/widgets/card/long_card.dart';
 import 'package:jas_cuaca/presentation/widgets/card/weather_card.dart';
+import 'package:jas_cuaca/presentation/widgets/input/dropdown_input.dart';
 import 'package:jas_cuaca/util/global_style.dart';
 
 void main() {
@@ -93,9 +94,14 @@ class _MyHomePageState extends State<MyHomePage> {
         // how it positions its children. Here we use mainAxisAlignment to
         // center the children vertically; the main axis here is the vertical
         // axis because Columns are vertical (the cross axis would be
-        // horizontal).
+        // horizontal).++
         // mainAxisAlignment: MainAxisAlignment.start,r
-        children: <Widget>[HumadityCard(type: 'Max', value: 27)],
+        children: <Widget>[
+          DropdownInput(
+              tittle: 'Masuk',
+              data: ['Pilih Jawaban', 'Cat', 'Jakarta Pusat', 'Bandar Lampung'],
+              firstText: 'Pilih Lah ampiak Tigo')
+        ],
       ),
 
       // This trailing comma makes auto-formatting nicer for build methods.
