@@ -1,5 +1,8 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:jas_cuaca/presentation/widgets/button/setting_button.dart';
+import 'package:jas_cuaca/presentation/widgets/card/long_card.dart';
+import 'package:jas_cuaca/util/dummie_data.dart';
 
 import '../../util/global_style.dart';
 
@@ -42,6 +45,7 @@ class _BerandaState extends State<Beranda> {
             Container(
               width: MediaQuery.of(context).size.width * 1,
               height: 50,
+              margin: const EdgeInsets.only(bottom: 40),
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -58,6 +62,22 @@ class _BerandaState extends State<Beranda> {
                 ],
               ),
             ),
+            Center(
+              child: CarouselSlider.builder(
+                  itemCount: dataCardDummie.length,
+                  options: CarouselOptions(
+                    height: 430,
+                    onPageChanged: (index, reason) {
+                      print(dataCardDummie[index]["day"]);
+                    },
+                  ),
+                  itemBuilder: (context, index, realIndex) {
+                    return LongCard(
+                        day: dataCardDummie[index]["day"],
+                        max: dataCardDummie[index]["temperatureMax"],
+                        min: dataCardDummie[index]["temperatureMin"]);
+                  }),
+            )
           ],
         ),
       ),

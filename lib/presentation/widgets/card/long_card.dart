@@ -66,6 +66,7 @@ class _LongCardState extends State<LongCard> {
               child: Text(
                 widget.day,
                 style: widget.dayStyleText,
+                textAlign: TextAlign.center,
               ),
             ),
           ),
