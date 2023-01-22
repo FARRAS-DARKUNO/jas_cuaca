@@ -3,7 +3,7 @@ List get dataCardDummie => <Object>[
         "day": "Today",
         "temperatureMax": "32 C",
         "temperatureMin": "24 C",
-        "humidityMax": "100 %",
+        "humidityMax": "99 %",
         "humidityMin": "86 %",
       },
       {

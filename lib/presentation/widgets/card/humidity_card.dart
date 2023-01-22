@@ -38,8 +38,8 @@ class _HumadityCardState extends State<HumadityCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
-      width: 190,
+      height: 175,
+      width: 160,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
@@ -49,8 +49,8 @@ class _HumadityCardState extends State<HumadityCard> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-            height: 40,
-            width: 150,
+            height: 30,
+            width: 110,
             decoration: BoxDecoration(
               color: kTersier,
               borderRadius: BorderRadius.circular(30),
@@ -89,7 +89,7 @@ class _HumadityCardState extends State<HumadityCard> {
             ),
           ),
           CircularPercentIndicator(
-            radius: 60.0,
+            radius: 45.0,
             lineWidth: 10.0,
             percent: (widget.value / 100),
             center: Text(

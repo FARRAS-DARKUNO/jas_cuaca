@@ -48,7 +48,7 @@ class _LongCardState extends State<LongCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 420,
+      height: 450,
       width: MediaQuery.of(context).size.width * 0.7,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
